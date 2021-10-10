@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Lufga-regular;
+    src: url("./fonts/Lufga-Regular.otf") format("opentype");
+}
+
+@tailwind base;
+@tailwind components;
+
+@layer components{
+    .scroller {
+        -webkit-overflow-scrolling: touch;
+      }
+      
+      .scroller::-webkit-scrollbar  {
+          display: none;
+          height: 0;
+          width: 0;
+      }
+}
+
+@tailwind utilities;
